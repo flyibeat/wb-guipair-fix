@@ -1,0 +1,38 @@
+# Build outputs (c-shared plugin library + generated header)
+workbuddy/dist/
+workbuddy/*.so
+workbuddy/*.dylib
+workbuddy/*.dll
+workbuddy/*.h
+workbuddy/workbuddy-plus
+
+# Release/CI scratch
+dist/
+out/
+
+# Go
+*.test
+*.out
+coverage.out
+coverage.html
+
+# Editors / OS
+.DS_Store
+*.swp
+
+# Stray local build output at the repo root (make build writes here)
+/workbuddy.so
+/workbuddy-dev.so
+/workbuddy.h
+/workbuddy-dev.h
+
+# Python bytecode from scripts/
+__pycache__/
+*.pyc
+
+# Local previews built from real snapshots (regenerate with mockups/build-accounts-mockup.py)
+/mockups/
+
+# Stray main-package binary from `go build ./...`
+/workbuddy/workbuddy
+/REPORTS/
